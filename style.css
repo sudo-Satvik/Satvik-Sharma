@@ -394,7 +394,7 @@ span{
     display: flex;
     border-radius: 2rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    overflow: hidden;   
 }
 
 .portfolio-box img{
@@ -580,6 +580,9 @@ span{
     .professional-container{
         right: -15rem;
     }
+    .portfolio .portfolio-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
 
     .home-img img{
         right: -4rem;
@@ -590,6 +593,9 @@ span{
     .home-content{
         position: absolute;
         left: 20px;
+    }
+    .portfolio .portfolio-container{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -610,6 +616,14 @@ span{
 }
 
 @media only screen and (max-width: 1340px) {
+
+    .portfolio .portfolio-layer h4{
+        font-size: 2.5rem;
+    }
+
+    .portfolio .portfolio-layer p{
+        font-size: 1.3rem;
+    }
     .navbar a:nth-child(1){
         color: var(--main-color);
     }
@@ -718,7 +732,13 @@ span{
     .portfolio .portfolio-container{
         grid-template-columns: repeat(2, 1fr);
     }
+    .portfolio .portfolio-layer h4{
+        font-size: 2.5rem;
+    }
 
+    .portfolio .portfolio-layer p{
+        font-size: 1.3rem;
+    }
     .testimonial-wrapper{
         padding: 5rem 0;
         width: 100%;
@@ -737,7 +757,7 @@ span{
     }
     #menu-icon{
         display: block;
-        color: var(--white-color);
+        color: var(--text-color);
     }
 
     .navbar{
